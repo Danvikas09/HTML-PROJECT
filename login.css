@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff5f5;
+  color: #333;
+}
+
+header {
+  background-color: #b30000;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+nav {
+  background-color: #ff6666;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+nav a:hover, nav a.active {
+  background-color: #cc0000;
+  border-radius: 5px;
+}
+
+.login-container {
+  background-color: white;
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.login-container h2 {
+  color: #b30000;
+  margin-bottom: 10px;
+}
+
+.login-container p {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #b30000;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin-top: 25px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+.register {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register a {
+  color: #b30000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #b30000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 60px;
+}

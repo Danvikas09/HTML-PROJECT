@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | Domestic Violence Help Portal</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+  <header>
+    <h1>Register Here</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="legal.html">Legal Help</a>
+    <a href="counselling.html">Counselling</a>
+    <a href="login.html">Login</a>
+    <a href="register.html" class="active">Register</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="register-container">
+    <h2>Create a New Account</h2>
+
+    <form onsubmit="return validateRegister()">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Create a password" required>
+
+      <label for="confirm">Confirm Password:</label>
+      <input type="password" id="confirm" placeholder="Re-enter password" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <!-- 🔴 Exit Site Button (ADDED ONLY) -->
+    <button onclick="exitSite()" style="
+      margin-top:15px;
+      background:#555;
+      color:white;
+      padding:10px 16px;
+      border:none;
+      cursor:pointer;">
+      Exit Site
+    </button>
+
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Domestic Violence Support Portal</p>
+  </footer>
+
+  <!-- 🔹 JavaScript (ONLY ADDED) -->
+  <script>
+    function validateRegister() {
+      let password = document.getElementById("password").value;
+      let confirm = document.getElementById("confirm").value;
+      let phone = document.getElementById("phone").value;
+
+      if (phone.length !== 10) {
+        alert("Phone number must be 10 digits");
+        return false;
+      }
+
+      if (password !== confirm) {
+        alert("Passwords do not match");
+        return false;
+      }
+
+      alert("Registration successful (Demo)");
+      return true;
+    }
+
+    function exitSite() {
+      window.location.href = "https://www.google.com";
+    }
+  </script>
+
+</body>
+</html>

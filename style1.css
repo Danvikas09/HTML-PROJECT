@@ -1,0 +1,281 @@
+/* ====== Animated Gradient Background ====== */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(-45deg, #ffe6e6, #fff0f5, #ffd6eb, #fff5fa);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  color: #333;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+/* ====== Header ====== */
+header {
+  background: linear-gradient(135deg, #b30059, #ff6699);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 42px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* ====== Navigation Bar ====== */
+nav {
+  background: rgba(255, 179, 179, 0.95);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 20px 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #660033;
+  margin: 8px 15px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.4s ease;
+  background: white;
+}
+
+nav a:hover,
+nav a.active {
+  background: linear-gradient(135deg, #ff6699, #ff3366);
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ====== Banner Section ====== */
+/* Exit Site Button */
+
+/* Exit Site button - top right */
+.exit {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background-color: #555;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 14px;
+}
+
+.exit:hover {
+  background-color: #333;
+}
+
+.banner {
+  width: 90%;
+  height: 300px;
+  background: linear-gradient(120deg, #ffcce6, #ffe6f2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 30px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: fadeSlide 1.2s ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.2), transparent);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+/* ====== Main Content ====== */
+.content {
+  width: 85%;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  animation: fadeUp 1.2s ease-in-out;
+  position: relative;
+}
+
+.content h2 {
+  color: #b30047;
+  margin-top: 30px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: textUp 1.5s forwards;
+}
+
+.content h2::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6699, #ff99cc);
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+}
+
+.content p, .content li {
+  font-size: 17px;
+  margin-top: 10px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUpText 2s forwards;
+}
+
+.content ul, .content ol {
+  padding-left: 25px;
+}
+
+/* ====== Text Hover Glow ====== */
+.content p:hover, 
+.content li:hover {
+  color: #b30047;
+  text-shadow: 0 0 10px #ffb3d9;
+  transition: all 0.3s ease;
+}
+
+/* ====== Highlight Quote ====== */
+.quote {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 20px;
+  color: #b30047;
+  font-weight: bold;
+  background: #ffe6f2;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+}
+
+.quote:hover {
+  background: linear-gradient(135deg, #ff99cc, #ffb3d9);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffb3d9;
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  background: #b30047;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* ====== Buttons ====== */
+button, input[type="submit"] {
+  background: linear-gradient(135deg, #ff6699, #ff3366);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+button:hover, input[type="submit"]:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(255, 100, 150, 0.4);
+}
+
+/* ====== Forms ====== */
+form {
+  background: #fff7fa;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 2px solid #ffcce0;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+  border-color: #ff6699;
+  box-shadow: 0 0 10px #ff99cc;
+}
+
+/* ====== Animations ====== */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUpText {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes textUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 0.6; transform: scale(1); }
+}

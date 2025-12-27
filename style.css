@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fdf2f2;
+  color: #333;
+}
+
+header {
+  background-color: #b30000;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+nav {
+  background-color: #ff6666;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #cc0000;
+  border-radius: 5px;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.buttons a {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.buttons a:hover {
+  background-color: #cc0000;
+}
+
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  color: #b30000;
+  margin-bottom: 15px;
+}
+
+.info {
+  background-color: #ffe6e6;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.info h3 {
+  color: #b30000;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #b30000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.helpline {
+  background-color: #ffcccc;
+  padding: 25px;
+  text-align: center;
+  font-weight: bold;
+  color: #990000;
+}
